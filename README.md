@@ -1,3 +1,4 @@
+<img width="1512" height="982" alt="Screenshot 2026-05-02 at 3 22 34 PM" src="https://github.com/user-attachments/assets/104b671c-7397-4ffd-a779-061db548202a" />
 # RoboControl – Robotic Arm Control System
 
 RoboControl is a full-stack robotic arm control system that allows you to control servo motors in real-time using a web interface, a FastAPI backend, and an ESP32 microcontroller.
@@ -115,6 +116,11 @@ http://127.0.0.1:8000
 
 
 <img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 55 24 PM" src="https://github.com/user-attachments/assets/26603752-498c-4daf-a206-234f7d7c681a" />
+
+---
+##Circuit Diagram
+
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/0eab004e-2dc7-48fe-b08d-50d19e986c0e" />
 
 
 ---
