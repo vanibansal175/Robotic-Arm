@@ -95,6 +95,49 @@ http://127.0.0.1:8000
   - Uvicorn  
   - Requests  
   - ESP32Servo  
-  - ArduinoJson  
+  - ArduinoJson
+
+ ---
+ ##Website Picture(Controller)
+
+ <img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 51 29 PM" src="https://github.com/user-attachments/assets/215dec0b-4604-4bab-bab9-813f13850d80" />
+
+ ---
+ ##Backend Running
+ 
+<img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 54 22 PM" src="https://github.com/user-attachments/assets/78ad57f0-56a2-490e-b934-a716d905d470" />
+
+
+---
+##Fusion(Design)
+
+<img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 55 47 PM" src="https://github.com/user-attachments/assets/67126eda-4edc-48ed-b961-9dad2dfb33fd" />
+
+
+<img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 55 24 PM" src="https://github.com/user-attachments/assets/26603752-498c-4daf-a206-234f7d7c681a" />
+
+
+---
+
+##Components Table
+
+
+ | # | Component                | Description                                  | Quantity | Notes |
+|---|--------------------------|----------------------------------------------|----------|------|
+| 1 | ESP32 Dev Board         | Main microcontroller                         | 1        | WiFi + control logic |
+| 2 | Servo Motor (SG90)      | Small joints / lightweight movement          | 3–4      | Good for prototype |
+| 3 | Servo Motor (MG996R)    | High torque joints (base/arm)                | 2–3      | Metal gear |
+| 4 | Servo Driver (PCA9685)  | Controls multiple servos via I2C             | 1        | Optional but recommended |
+| 5 | External Power Supply   | 5V–6V for servos                            | 1        | DO NOT power from ESP32 |
+| 6 | Breadboard              | Temporary connections                        | 1        | Optional |
+| 7 | Jumper Wires            | Connections                                 | 20+      | Male-Female + Male-Male |
+| 8 | Robotic Arm Structure   | 3D printed / laser cut parts                 | 1 set    | From Fusion 360 |
+| 9 | Gripper Mechanism       | End effector for picking objects             | 1        | Servo controlled |
+|10 | Camera Module (ESP32-CAM)| Live feed / vision                          | 1        | Optional |
+|11 | WiFi Router             | Communication between UI & ESP32             | 1        | Required for remote control |
+|12 | Capacitors (100µF+)     | Stabilize servo power                        | 2–3      | Prevent resets |
+|13 | Resistors               | Basic circuit protection                     | Few      | Optional |
+|14 | Switch / Emergency Stop | Safety cutoff                                | 1        | Recommended |
+
 
 
