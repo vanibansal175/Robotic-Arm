@@ -170,22 +170,27 @@ there were many small problems during development like WiFi delays servo jitter 
 ##Components Table
 
 
- | # | Component                | Description                                  | Quantity | Notes |
-|---|--------------------------|----------------------------------------------|----------|------|
-| 1 | ESP32 Dev Board         | Main microcontroller                         | 1        | WiFi + control logic |
-| 2 | Servo Motor (SG90)      | Small joints / lightweight movement          | 3–4      | Good for prototype |
-| 3 | Servo Motor (MG996R)    | High torque joints (base/arm)                | 2–3      | Metal gear |
-| 4 | Servo Driver (PCA9685)  | Controls multiple servos via I2C             | 1        | Optional but recommended |
-| 5 | External Power Supply   | 5V–6V for servos                            | 1        | DO NOT power from ESP32 |
-| 6 | Breadboard              | Temporary connections                        | 1        | Optional |
-| 7 | Jumper Wires            | Connections                                 | 20+      | Male-Female + Male-Male |
-| 8 | Robotic Arm Structure   | 3D printed / laser cut parts                 | 1 set    | From Fusion 360 |
-| 9 | Gripper Mechanism       | End effector for picking objects             | 1        | Servo controlled |
-|10 | Camera Module (ESP32-CAM)| Live feed / vision                          | 1        | Optional |
-|11 | WiFi Router             | Communication between UI & ESP32             | 1        | Required for remote control |
-|12 | Capacitors (100µF+)     | Stabilize servo power                        | 2–3      | Prevent resets |
-|13 | Resistors               | Basic circuit protection                     | Few      | Optional |
-|14 | Switch / Emergency Stop | Safety cutoff                                | 1        | Recommended |
+ | # | Component                 | Description                                  | Quantity | Notes | Approx Cost (INR) |
+|---|---------------------------|----------------------------------------------|----------|----------------------------|------------------|
+| 1 | ESP32 Dev Board           | Main microcontroller                         | 1        | WiFi + control logic       | ₹500 |
+| 2 | Servo Motor (SG90)        | Small joints / lightweight movement          | 4        | Good for prototype         | ₹480 |
+| 3 | Servo Motor (MG996R)      | High torque joints (base/arm)                | 3        | Metal gear                 | ₹1350 |
+| 4 | Servo Driver (PCA9685)    | Controls multiple servos via I2C             | 1        | Optional but recommended   | ₹250 |
+| 5 | External Power Supply     | 5V–6V for servos                             | 1        | DO NOT power from ESP32    | ₹400 |
+| 6 | Breadboard                | Temporary connections                        | 1        | Optional                   | ₹120 |
+| 7 | Jumper Wires              | Connections                                  | 20+      | Male-Female + Male-Male    | ₹150 |
+| 8 | Robotic Arm Structure     | 3D printed / laser cut parts                 | 1 set    | From Fusion 360            | ₹1800 |
+| 9 | Gripper Mechanism         | End effector for picking objects             | 1        | Servo controlled           | ₹350 |
+|10 | Camera Module (ESP32-CAM) | Live feed / vision                           | 1        | Optional                   | ₹650 |
+|12 | Capacitors (100µF+)       | Stabilize servo power                        | 3        | Prevent resets             | ₹50 |
+|13 | Resistors                 | Basic circuit protection                     | Few      | Optional                   | ₹30 |
+|14 | Switch / Emergency Stop   | Safety cutoff                                | 1        | Recommended                | ₹80 |
+
+---
+
+## Total Estimated Cost
+**~ ₹4,930**
+
 
 
 
