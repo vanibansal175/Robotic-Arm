@@ -1,36 +1,55 @@
-# RoboControl – Robotic Arm Control System
+# RoboControl – robotic arm control system
 
-RoboControl is a full-stack robotic arm control system that allows you to control servo motors in real-time using a web interface, a FastAPI backend, and an ESP32 microcontroller.
+RoboControl is a full-stack robotic arm control system that allows real time control of a robotic arm using a web interface(that i build), FastAPI backend and ESP32 microcontroller.
 
----
+# My Objective to build it ?
 
-## Overview
-
-This project connects all layers of a robotic system:
+the main idea behind this project was to understand how software and hardware communicate together in an actual robotics system. instead of only making the robotic arm mechanically, i also wanted to build the complete control architecture behind it.
 
 ---
 
+# overview
 
-You can:
-- Control joints using sliders
-- Send commands over WiFi
-- View real-time logs
-- Operate a physical robotic arm
+So lets see how i connected different system together ?
 
----
+- frontend for controlling the arm
+- backend for handling requests
+- ESP32 for communicating with hardware
+- servo motors for physical movement
 
-## Tech Stack
-
-- Frontend: Next.js, Tailwind CSS
-- Backend: FastAPI (Python)
-- Hardware: ESP32, Servo Motors
-- 3D Visualization: React Three Fiber (optional)
+the whole system works on wi-fi communication which makes it completely wireless and easy to handle.
 
 ---
 
-## Frontend Setup
+# what this project can do ?
 
-### 1. Navigate to frontend directory
+- control robotic joints using sliders (Frontend)
+- send movement commands through WiFi (Common wi-fi)
+- monitor live logs and activity (FastApi Backend)
+- move actual physical robotic arm in real time
+
+One thing that i make sure is that i make the project modular which helps in development of the model easy in future.
+---
+
+# tech stack
+
+### frontend
+- Next.js
+- Tailwind CSS
+
+### backend
+- FastAPI (Python)
+
+### hardware
+- ESP32 Development Board
+- Servo Motors
+
+
+---
+
+# frontend setup
+
+
 ```bash
 cd frontend
 npm install
@@ -39,66 +58,90 @@ http://localhost:3000
 ```
 
 ---
-## Backend Setup
 
-### 1. Navigate to backend directory
+# backend setup
+
 ```bash
 cd backend
 python3 -m venv venv
 source venv/bin/activate
-python -m venv venv
-venv\Scripts\activate
 pip install fastapi uvicorn requests
 uvicorn main:app --reload
-http://127.0.0.1:8000
+http://0.0.0.0:8000
 ```
 
----
-
-## Objective and Motivation
-
-- Build a complete end-to-end robotic control system from user interface to physical hardware  
-- Learn how frontend, backend, and embedded systems communicate in real-time  
-- Enable wireless control of a robotic arm using WiFi instead of wired interfaces  
-- Create a scalable architecture that can support multiple joints and future automation  
-- Develop a modular system where UI, backend, and hardware can be independently improved  
+Note - Please run the backend on 0.0.0.0:8000 port because i have setup the cors according to thois only.
 
 ---
 
-## Key Features
+# objective and motivation
 
-- Real-time control of robotic joints using sliders  
-- WiFi-based communication between backend and ESP32  
-- REST API for sending movement commands  
-- Live activity/log system using WebSockets  
-- Expandable architecture for adding more servos or sensors  
-- Optional 3D visualization of robotic arm movement  
+So as io stated that i build this to understand how we can integrate different sectors together.
+
+during this project i learned:
+
+- communication between frontend backend and hardware
+- how REST APIs work in robotics ( this is most interesting)
+- realtime data transfer using WiFi
+- handling servo motor movement through ESP32
+- designing scalable architecture for robotics systems
+
+i didn't wanted to only make a robotic arm that moves. i wanted to understand the actual system behind it. 
 
 ---
 
-## Components List
+# key features
 
-### Electronics
-- ESP32 Development Board  
-- Servo Motors (3 to 6 depending on design)  
-- External 5V Power Supply (minimum 3A recommended)  
-- Jumper Wires (Male-Male / Male-Female)  
-- Breadboard (optional)  
-- Capacitor (1000µF recommended for stability)  
+- realtime robotic arm control
+- wireless communication using WiFi
+- REST API based architecture (all movents are under one api actions... all 6 movements)
+- live logs using websockets(httpx requests)
+- 3D visualization (Center robotic arm on web can move)
 
-### Software
-- Node.js (Frontend environment)  
-- Python 3.x (Backend environment)  
-- Arduino IDE (ESP32 programming)  
-- Required Libraries:
-  - FastAPI  
-  - Uvicorn  
-  - Requests  
-  - ESP32Servo  
-  - ArduinoJson
+---
 
- ---
- ##Website Picture(Controller)
+# components used
+
+## electronics
+
+- ESP32 Development Board
+- Servo Motors
+- 5V external power supply
+- jumper wires
+- 1000µF capacitor for stability
+
+---
+
+## software
+
+- Node.js
+- Python 3.x
+- Arduino IDE
+
+### required libraries
+
+- FastAPI
+- Uvicorn
+- Requests
+- ESP32Servo
+- ArduinoJson
+
+---
+
+# final thoughts
+
+this project was not only about robotics but also about learning how complete systems are built. 
+
+from frontend to backend to embedded hardware everything is connected together.
+
+this is very interesting project for me because it gave me much more learning than i thought.
+
+
+there were many small problems during development like WiFi delays servo jitter and backend communication bugs but solving those issues helped me understand robotics systems in much more practical way and i learned a lot.
+
+---
+
+##Website Picture(Controller)
 
  <img width="1512" height="982" alt="Screenshot 2026-05-02 at 2 51 29 PM" src="https://github.com/user-attachments/assets/215dec0b-4604-4bab-bab9-813f13850d80" />
 
