@@ -189,7 +189,9 @@ there were many small problems during development like WiFi delays servo jitter 
 ---
 
 ## Total Estimated Cost
-**~ ₹4,930**
+## ₹4,930 also 52 dollars.
+
+Note - I have all the components with me..
 
 
 
